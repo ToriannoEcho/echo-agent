@@ -1,3 +1,4 @@
-flask
+fastapi
 gunicorn
+uvicorn
 psycopg2-binary
