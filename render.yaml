@@ -2,8 +2,8 @@ services:
   - type: web
     name: echo-agent
     env: python
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
     envVars:
       - key: DATABASE_URL
-        value: postgresql://echouser:jeJv2tBOKWrXYes8A9ES8UZWt4t8HQrq@dpg-d11kagfdiees73ffoe6g-a.oregon-postgres.render.com/echodb_wa4f
+        value: postgresql://echouser:jeJv2tBOKWrXY...
